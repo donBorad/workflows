@@ -61,7 +61,7 @@ footer {
     bottom: 0;
 }
         pre {
-            background-color: bred;
+            background-color: red;
             padding: 10px;
             border-radius: 5px;
             overflow-x: auto;
