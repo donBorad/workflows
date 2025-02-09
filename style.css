@@ -60,3 +60,13 @@ footer {
     width: 100%;
     bottom: 0;
 }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: Consolas, "Courier New", monospace;
+            color: #d63384;
+        }
