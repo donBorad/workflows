@@ -21,16 +21,16 @@
     <main>
         <div class="content-section">
             <h2>SSH to a VM on Azure</h2>
-                <p>If none of the above works, you may need to regenerate the SSH keys and update the VM:<br>
+    <p>Generate the SSH keys and update the VM:</p>
 
-    Generate a new SSH key pair:</p>
+        <ol>
+            <li>Generate a new SSH key pair:</li>
     <pre><code>
         #!/bin/bash
         
         ssh-keygen -t rsa -b 4096 -f ~/.ssh/new_key
             </code></pre>
-    <ol>
-        <li>Generate a new SSH key pair:</li>
+
         <li>Update the VM's public key in the Azure portal:</li>
         <p>Go to the VM > Reset password > Reset SSH public key.<br>
           Paste the new public key (new_key.pub).</p>
