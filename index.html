@@ -30,12 +30,12 @@
      ssh-keygen -t rsa -b 4096 -f ~/.ssh/new_key
     </code></pre>
 
-        <li>Update the VM's public key in the Azure portal:</li>
-        <p>Go to the VM > Reset password > Reset SSH public key.<br>
-          Paste the new public key (new_key.pub).</p>
-        <li>Use the new private key to connect:</li>
-        <p></p>
-        <pre><code>
+    <li>Update the VM's public key in the Azure portal:</li>
+    <p>Go to the VM > Reset password > Reset SSH public key.<br>
+      Paste the new public key (new_key.pub).</p>
+    <li>Use the new private key to connect:</li>
+    <p></p>
+    <pre><code>
     #!/bin/bash
      ssh -i ~/.ssh/new_key azureuser@48.217.88.99
         </code></pre>
